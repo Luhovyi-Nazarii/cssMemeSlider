@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -157,17 +158,31 @@ img {
 
 @media (max-width: 63.9375rem) {
   .navigation {
-  
     justify-content: center;
+    margin-top: 0rem;
   }
+
+  
 
   .cotainer_bottom {
     flex-direction: column;
+    max-width: 30rem;
   }
 
   .cont_slides_text {
     margin-top: 0;
   }
+
+  img {
+    width: 80%;
+    height: 90%;
+  }
+
+  .slide1 > p {
+    padding-left: 3rem;
+  }
+
+
 
 }
 
