@@ -35,9 +35,9 @@ body {
 
 .navigation {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .bar {
@@ -71,19 +71,19 @@ body {
   background-color: #3a0303;
 }
 
-#r1:checked ~ .navigation > .bar:nth-child(1) > .custome_input {
+#r1:checked ~ .cotainer_bottom > .navigation > .bar:nth-child(1) > .custome_input {
   background-color: #ecdcdc;
 }
 
-#r2:checked ~ .navigation > .bar:nth-child(2) > .custome_input {
+#r2:checked ~ .cotainer_bottom > .navigation > .bar:nth-child(2) > .custome_input {
   background-color: #ecdcdc;
 }
 
-#r3:checked ~ .navigation > .bar:nth-child(3) > .custome_input {
+#r3:checked ~ .cotainer_bottom > .navigation > .bar:nth-child(3) > .custome_input {
   background-color: #ecdcdc;
 }
 
-#r4:checked ~ .navigation > .bar:nth-child(4) > .custome_input {
+#r4:checked ~ .cotainer_bottom > .navigation > .bar:nth-child(4) > .custome_input {
   background-color: #ecdcdc;
 }
 
@@ -119,9 +119,9 @@ input[name="r"] {
   /* border: 1px solid blue; */
 }
 
-/* img {
-  
-} */
+img {
+  border-radius: 10px;
+}
 
 .s1 {
   margin-left: 0;
@@ -143,8 +143,60 @@ input[name="r"] {
   margin-left: -75%;
 }
 
+#r1:checked ~ .cotainer_bottom > .cont_slides_text > .slides > .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .cotainer_bottom > .cont_slides_text > .slides > .s1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .cotainer_bottom > .cont_slides_text > .slides > .s1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .cotainer_bottom > .cont_slides_text > .slides > .s1 {
+  margin-left: -75%;
+}
 
 
+
+.cotainer_bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  /* flex-direction: column; */
+}
+
+.cont_slides_text {
+  /* display: flex; */
+  /* flex-direction: column; */
+  max-width: 330px;
+  /* width: 100%; */
+  /* height: 600px; */
+  overflow: hidden;
+  /* border: 1px solid red; */
+  /* margin: 100px auto 0; */
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1023px) {
+  .navigation {
+  
+    justify-content: center;
+  }
+
+  .cotainer_bottom {
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+  }
+
+  .cont_slides_text {
+    margin-top: 0;
+  }
+
+}
 
 /* h1 {
   font-weight: bold;
