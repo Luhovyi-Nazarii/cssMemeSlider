@@ -18,6 +18,8 @@ body {
   color: #24292F;
   font-weight: normal;
   line-height: 1.3;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
 }
 
 .slider {
@@ -25,7 +27,6 @@ body {
   flex-direction: column;
   max-width: 30rem;
   width: 100%;
-  height: 37.5rem;
   overflow: hidden;
   margin: 6.25rem auto 0;
 }
@@ -93,7 +94,11 @@ input[name="r"] {
   display: flex;
   justify-content: center;
   width: 25%;
+  height: 100%;
+  max-width: 30rem;
+  max-height: 30rem;
   transition: all .6s ease;
+
 }
 
 .slide1 {
@@ -104,6 +109,7 @@ input[name="r"] {
 
 img {
   border-radius: 0.625rem;
+  width: 100%;
 }
 
 .s1 {
@@ -159,7 +165,7 @@ img {
 @media (max-width: 63.9375rem) {
   .navigation {
     justify-content: center;
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
 
   
@@ -173,14 +179,7 @@ img {
     margin-top: 0;
   }
 
-  img {
-    width: 80%;
-    height: 90%;
-  }
 
-  .slide1 > p {
-    padding-left: 3rem;
-  }
 
 
 
