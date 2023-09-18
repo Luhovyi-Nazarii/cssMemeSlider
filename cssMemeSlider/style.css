@@ -191,6 +191,11 @@ img {
     margin-top: 0;
   }
 
+  p {
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+
 
 }
 
