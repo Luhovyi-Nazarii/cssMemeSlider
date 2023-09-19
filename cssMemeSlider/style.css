@@ -59,17 +59,19 @@ p {
   border: 0.125rem solid black;
   background-color: black;
   border-radius: 0.625rem;
+  transition: 0.1s all ease-in-out;
 }
 
 .bar:hover .custome_input {
-  border: 0.125rem solid #6b1818;
-  background-color: #6b1818;
+  border: 0.125rem solid #ce1d1d;
+  background-color: #ce1d1d;
 }
 
 .bar:active .custome_input {
   /* border: 0.125rem solid white;
   background-color: white; */
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  scale: 1.4;
 }
 
 
